@@ -7,16 +7,18 @@
 
 
 	<h1>Towns list</h1>
-	<table>
+	<table class="table">
 		<thead>
 			<tr>
-				<th>Town</th>
+				<th>Name</th>
+				<th>State</th>
 			</tr>
 		</thead>
         <tbody>
             {% for town in towns %}
             <tr>
-                <td>{{town}}</td>
+                <td>{{town.name}}</td>
+				<td>{{town.state}}</td>
             </tr>
             {% endfor %}
         </tbody>

@@ -1,0 +1,13 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Company details{% endblock %}
+
+{% block body %}
+
+<h1>Details</h1>
+    
+  <p>Name : {{ company.name }}</p>
+  <p>Acronym : {{ company.acronym }}</p>
+  <p>Employees : {{ company.employees }}</p>
+
+{% endblock %}
